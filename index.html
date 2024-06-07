@@ -1,0 +1,284 @@
+
+<!-- <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenas viagens</title>  menu superior -->
+    <!-- <style>
+        body { font-family: Arial, sans-serif; }
+        .header { display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #f8f8f8; }
+        .logo { font-size: 24px; font-weight: bold; }
+        .navigation { list-style: none; display: flex; }
+        .navigation li { padding: 0 15px; }
+        .navigation a { text-decoration: none; color: #333; }
+        .banner-image { width: 100%; height: 300px; background: url('img/banner site.jpg') no-repeat center center; background-size: cover; }
+        .search-menu { display: flex; justify-content: center; padding: 20px; }
+        .search-menu input, .search-menu button { padding: 10px; margin: 0 5px; }
+    </style>
+</head>
+<body> -->
+<!--menu superior de navegação -->
+<!-- <div class="header">
+    <div class="logo">  𝓑𝓾𝓮𝓷𝓪𝓼 𝓿𝓲𝓪𝓰𝓮𝓷𝓼</div>
+    <ul class="navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tours">Passeios</a></li>
+        <li><a href="#destinations">Destinos</a></li>
+        <li><a href="#reviews">Avaliações</a></li>
+    </ul>
+</div> -->
+<!--banner abaixo do menu superior -->
+<!-- <div class="banner-image"></div>
+
+ menu com datas  -->
+<!-- <div class="search-menu">
+    <input type="text" placeholder="Para onde vamos?" id="destination">
+    <input type="date" placeholder="Quando" id="departure-date">
+    <input type="date" placeholder="Retorno" id="return-date">
+    <button onclick="searchTrips()">Buscar</button> -->
+<!-- </div> 
+
+<script>
+    function searchTrips() {
+        var destination = document.getElementById('destination').value;
+        var departureDate = document.getElementById('departure-date').value;
+        var returnDate = document.getElementById('return-date').value;
+        alert('Buscar viagens para ' + destination + ' de ' + departureDate + ' até ' + returnDate);
+    }
+</script>  -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenas viagens</title>   <!--menu superior -->
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #f8f8f8; }
+        .logo { font-size: 24px; font-weight: bold; }
+        .navigation { list-style: none; display: flex; }
+        .navigation li { padding: 0 15px; }
+        .navigation a { text-decoration: none; color: #333; }
+        .navigation a:hover { color: rgb(192, 95, 11); }  /* Change color on hover */
+        .banner-image { width: 100%; height: 300px; background: url('img/banner site.jpg') no-repeat center center; background-size: cover; }
+        .search-menu { display: flex; justify-content: center; padding: 20px; }
+        .search-menu input, .search-menu button { padding: 10px; margin: 0 5px; }
+        .search-menu button { background-color: rgb(192, 95, 11); color: white; }  /* Change button color */
+        .search-menu button:hover { background-color: rgb(150, 75, 0); }  /* Change button color on hover */
+        /* Assuming that the social media icons are links, change their color on hover */
+        .social-media a:hover { color: rgb(192, 95, 11); }
+    </style>
+</head>
+<body>
+<!--menu superior de navegação -->
+<div class="header">
+    <div class="logo">  𝓑𝓾𝓮𝓷𝓪𝓼 𝓿𝓲𝓪𝓰𝓮𝓷𝓼</div>
+    <ul class="navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tours">Passeios</a></li>
+        <li><a href="#destinations">Destinos</a></li>
+        <li><a href="#reviews">Avaliações</a></li>
+    </ul>
+</div>
+<!--banner abaixo do menu superior -->
+<div class="banner-image"></div>
+
+<!-- menu com datas  -->
+<div class="search-menu">
+    <input type="text" placeholder="Para onde vamos?" id="destination">
+    <input type="date" placeholder="Quando" id="departure-date">
+    <input type="date" placeholder="Retorno" id="return-date">
+    <button onclick="searchTrips()">Buscar</button>
+</div>
+
+<script>
+    function searchTrips() {
+        var destination = document.getElementById('destination').value;
+        var departureDate = document.getElementById('departure-date').value;
+        var returnDate = document.getElementById('return-date').value;
+        alert('Buscar viagens para ' + destination + ' de ' + departureDate + ' até ' + returnDate);
+    }
+</script>
+</body>
+</html>
+
+
+<!-- bloco com texto e as 4 fotos -->
+
+<div style="background-color: white; padding: 20px; display: flex; justify-content: space-between;">
+    <div style="flex: 1; padding-right: 20px;">
+        <h2 style="color: rgb(46, 46, 235);">Próximos passeios e destinos</h2>
+        <p>Descubra os melhores lugares para visitar e as experiências mais emocionantes que você pode ter durante sua viagem.</p>
+        <button style="padding: 10px 20px; background-color: rgb(192, 95, 11); color: white; border: none; cursor: pointer;">Saiba mais</button>
+    </div>
+    <div style="flex: 1; display: flex; flex-wrap: wrap; justify-content: space-around;">
+        <img src="img/imgs1.jpg" alt="Foto 1" style="width: 48%; height: auto; margin-bottom: 10px;">
+        <img src="img/img2d4.jpg" alt="Foto 2" style="width: 48%; height: auto; margin-bottom: 10px;">
+        <img src="img/img3d4.jpg" alt="Foto 3" style="width: 48%; height: auto;">
+        <img src="img/img4d4.jpg" alt="Foto 4" style="width: 48%; height: auto;">
+    </div>
+</div>
+
+
+<!-- degrade e titulo  -->
+    <div style="background: linear-gradient(to right, purple, lightcoral); padding: 20px; text-align: center;">
+        <h2 style="color: rgb(13, 13, 166);">Para onde você quer viajar?</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px;">
+
+
+
+<!-- os 6 destinos -->
+
+
+            <!-- Destino 1 -->
+            <div style="width: 30%; margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                <img src="img/portugalimgs.jpg" alt="Destino 1" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3>Portugal</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corporis fugiat, aperiam quas ex provident repellendus similique necessitatibus eos. Corrupti molestiae accusamus rem et, adipisci veniam tempora quam est soluta.</p>
+                <p><strong>3.500</strong> <span style="font-size: smaller; text-decoration: line-through;">4.000</span></p>
+                <button style="padding: 10px 20px; background-color: rgb(192, 95, 11); color: white; border: none; cursor: pointer;">Saiba mais</button>
+            </div>
+           
+            <!-- Destino 2 -->
+            <div style="width: 30%; margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                <img src="img/italiaimgs.jpg" alt="Destino 2" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3>Italia</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, maiores rem quas sapiente sequi reprehenderit ullam dicta. Enim porro sapiente minus eveniet quam at, in quod dicta ipsa recusandae repudiandae.</p>
+                <p><strong>3.500</strong> <span style="font-size: smaller; text-decoration: line-through;">4.500</span></p>
+                <button style="padding: 10px 20px; background-color: rgb(192, 95, 11); color: white; border: none; cursor: pointer;">Saiba mais</button>
+            </div>
+
+
+
+            <!-- Destino 3 -->
+
+            <div style="width: 30%; margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                <img src="img/madridimgs.jpg" alt="Destino 3" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3>Madrid</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quibusdam necessitatibus reiciendis tempora deserunt adipisci iste dolore natus voluptatum harum sit, asperiores fugiat ullam sint qui pariatur dolorum architecto tempore..</p>
+                <p><strong>3.500</strong> <span style="font-size: smaller; text-decoration: line-through;">4.500</span></p>
+                <button style="padding: 10px 20px; background-color: rgb(192, 95, 11); color: white; border: none; cursor: pointer;">Saiba mais</button>
+            </div>
+
+
+
+            <!-- Destino 4 -->
+
+
+            <div style="width: 30%; margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                <img src="img/greciaimgs.jpg" alt="Destino 4" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3>Grecia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor cum quam maxime ducimus et iure, reprehenderit praesentium laboriosam quo, soluta itaque debitis iste veniam recusandae eius dolore nemo officia..</p>
+                <p><strong>3.500</strong> <span style="font-size: smaller; text-decoration: line-through;">4.500</span></p>
+                <button style="padding: 10px 20px; background-color: rgb(192, 95, 11); color: white; border: none; cursor: pointer;">Saiba mais</button>
+            </div>
+            <!-- Destino 5 -->
+            <div style="width: 30%; margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                <img src="img/chinaimgs.jpg" alt="Destino 5" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3>China</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id quod molestiae magni asperiores saepe, provident reiciendis placeat facilis, fugiat quia blanditiis, dolor ut error nobis officia cumque tempore. Expedita?.</p>
+                <p><strong>3.500</strong> <span style="font-size: smaller; text-decoration: line-through;">4.500</span></p>
+                <button style="padding: 10px 20px; background-color: rgb(192, 95, 11); color: white; border: none; cursor: pointer;">Saiba mais</button>
+            </div>
+
+
+            <!-- Destino 6 -->
+
+            <div style="width: 30%; margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                <img src="img/coreiaimgs.jpg" alt="Destino 6" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3>Coreia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ullam et nesciunt quas veniam facere a aliquam quo consequatur adipisci, eos quisquam tempore voluptas quia necessitatibus sit rem esse quis..</p>
+                <p><strong>3.500</strong> <span style="font-size: smaller; text-decoration: line-through;">4.500</span></p>
+                <button style="padding: 10px 20px; background-color: rgb(192, 95, 11); color: white; border: none; cursor: pointer;">Saiba mais</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+<!-- sessao de depoimento dos clientes -->
+
+<div style="background-color: white; padding: 20px; text-align: center;">
+    <h2 style="color: blue;">Avaliações dos clientes</h2>
+    <p>Aqui você pode ver o que nossos clientes têm a dizer sobre suas experiências de viagem conosco.</p>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <button onclick="previousReview()" style="border: none; background-color: transparent; cursor: pointer;">
+            <img src="img/seta da esquerda.jpg" alt="Anterior" style="height: 30px;">
+        </button>
+        <div style="padding: 20px;">
+            <img src="img/clienteimgs.jpg" alt="Foto do usuário" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h4>Luana</h4>
+            <!-- <p>Comentário do usuário sobre a experiência de viagem.</p> -->
+        </div>
+        <button onclick="nextReview()" style="border: none; background-color: transparent; cursor: pointer;">
+            <img src="img/seta da direita.jpg" alt="Próximo" style="height: 30px;">
+        </button>
+    </div>
+</div>
+
+<script>
+    // JavaScript functions to navigate between reviews
+    function previousReview() {
+        // Logic to go to the previous review
+    }
+    function nextReview() {
+        // Logic to go to the next review
+    }
+</script>
+
+
+
+
+
+
+<!-- rodape -->
+
+
+
+
+
+         <div style="background-color: black; color: white; padding: 20px; text-align: center;">
+            <h2>𝓑𝓾𝓮𝓷𝓪𝓼 𝓿𝓲𝓪𝓰𝓮𝓷𝓼</h2>
+            <p>Texto explicativo sobre a Buenas Viagens.</p>
+            <p>Outro texto informativo.</p>
+            <div style="display: flex; justify-content: space-around; align-items: center;">
+                <div>
+                    <h3>Informações</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel, laborum doloremque animi quibusdam! At sit esse fuga nesciunt architecto assumenda, quidem aliquam! Officia, hic!</p>
+                </div>
+                <div>
+                    <h3>Assine a nossa newsletter</h3>
+                    <input type="email" placeholder="Seu email" style="padding: 10px;">
+                    <button style="padding: 10px 20px; background-color: rgb(192, 95, 11); color: white; border: none; cursor: pointer;">Enviar</button>
+                </div>
+                <div>
+                    <h3>Siga nossas redes sociais</h3>
+
+                    <a href="img/wppimgs.jpg" target="_blank"><img src="img/wppimgs.jpg" alt="WhatsApp" style="width: 30px; height: 30px;"></a>
+                    <a href="img/instaimgs.jpg" target="_blank"><img src="img/instaimgs.jpg" alt="Instagram" style="width: 30px; height: 30px;"></a>
+                    <a href="img/faceimgs.jpg" target="_blank"><img src="img/faceimgs.jpg" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</div>
+<div style="background-color: blue; color: white; padding: 10px; text-align: center;">
+    <p>© 2024 Buenas Viagens. Todos os direitos reservados.</p>
+</div>
+
+
+
+        
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
